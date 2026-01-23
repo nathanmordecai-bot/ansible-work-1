@@ -6,12 +6,12 @@
   tasks:
   - name: Install Apache2
     apt:
-      name: Apache2
+      name: apache2
       state: present
 
   - name: Start and enable Apache2 service
     service:
-      name: Apache2
+      name: apache2
       state: started
       enabled: yes    
 ...      
