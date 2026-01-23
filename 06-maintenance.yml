@@ -5,7 +5,7 @@
 
   tasks:
   - name: update maintenance
-  py:
+    copy:
       src: Maintenance.html
       dest: /var/www/html/index.html 
 ...     
