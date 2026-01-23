@@ -1,0 +1,16 @@
+---
+- name: Install HTTP server
+  hosts: n2
+  become: yes
+
+  tasks:
+  - name: Install Git
+    yum:
+      name: git
+      state: present
+
+  - name: Host Code
+    git:
+      repo: https://github.com/nathanmordecai-bot/ecomm-3.git
+      dest: /var/www/html  
+...      
