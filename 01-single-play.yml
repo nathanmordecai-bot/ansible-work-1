@@ -2,7 +2,6 @@
 - name: Update n1 servers
   hosts: n1
 
-
   tasks:
   - name: Create directory
     file:
